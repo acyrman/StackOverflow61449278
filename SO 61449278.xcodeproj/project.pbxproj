@@ -14,6 +14,8 @@
 		2B1C81E9245678760030298F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1C81E8245678760030298F /* Assets.xcassets */; };
 		2B1C81EC245678760030298F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1C81EA245678760030298F /* LaunchScreen.storyboard */; };
 		2B1C81F7245678760030298F /* SO_61449278Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1C81F6245678760030298F /* SO_61449278Tests.swift */; };
+		2B1C8202245678C30030298F /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1C8201245678C30030298F /* WeatherData.swift */; };
+		2B1C8204245678F20030298F /* WeatherDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1C8203245678F20030298F /* WeatherDataProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		2B1C81F2245678760030298F /* SO 61449278Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SO 61449278Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1C81F6245678760030298F /* SO_61449278Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SO_61449278Tests.swift; sourceTree = "<group>"; };
 		2B1C81F8245678760030298F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1C8201245678C30030298F /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		2B1C8203245678F20030298F /* WeatherDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				2B1C81E8245678760030298F /* Assets.xcassets */,
 				2B1C81EA245678760030298F /* LaunchScreen.storyboard */,
 				2B1C81ED245678760030298F /* Info.plist */,
+				2B1C8201245678C30030298F /* WeatherData.swift */,
+				2B1C8203245678F20030298F /* WeatherDataProtocol.swift */,
 			);
 			path = "SO 61449278";
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1C8204245678F20030298F /* WeatherDataProtocol.swift in Sources */,
 				2B1C81E4245678750030298F /* ViewController.swift in Sources */,
 				2B1C81E0245678750030298F /* AppDelegate.swift in Sources */,
+				2B1C8202245678C30030298F /* WeatherData.swift in Sources */,
 				2B1C81E2245678750030298F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

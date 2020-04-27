@@ -8,13 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, WeatherDataProtocol {
+   func responseDataHandler(data: NSDictionary) {
+      DispatchQueue.main.async { [weak self] in
+         self?.dataTextView.text = "\(data)"
+      }
+   }
+   
+   func responseError(message: String) {
+      DispatchQueue.main.async { [weak self] in
+         self?.dataTextView.text = "\(message)"
+      }
+   }
+   
+   @IBOutlet weak var dataNumberTextField: UITextField!
+   @IBOutlet weak var dataTextView: UITextView!
+   fileprivate let wd = WeatherData()
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       // Do any additional setup after loading the view.
+      
+      wd.delegate = self
+      
    }
 
-
+   @IBAction func fetchData(_ sender: UIButton) {
+      guard let dataNumber = dataNumberTextField.text else {
+         return
+      }
+      dataNumberTextField.resignFirstResponder()
+      wd.getData(exampleDataNumber: dataNumber)
+   }
+   
 }
 
